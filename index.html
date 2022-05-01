@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Passinho do Romano</title>
+</head>
+<body>
+    
+    <h1>Passinho do Romano</h1>
+
+        <form action="">
+            <fieldset>
+            <textarea id="txt" name="txt" rows="4" cols="50" placeholder="Digite aqui sua mensagem!"></textarea>
+            <br><br>            
+            
+            <select name="tipoCodigo" id="tipoCodigo" required>
+                <option value="noValue" disabled selected>Escolha uma opção de código</option>
+                <option value="cesar">Cifra de César</option>                
+                <option value="base64">Base64</option>
+            </select><br><br>
+
+            
+          <div class="inc" style="display: none" id="valInc">
+            Incremento da cifra:
+            <input type="number" class="inputInc" id="numeroInc" default="0" min="1" value="1">
+            <br></div>
+          
+            <input type="radio" name="codeDecode" id="code" value="code">
+            <label for="code">Codificar</label><br>
+            <input type="radio" name="codeDecode" id="decode" value="decode">
+            <label for="decode">Decodificar</label><br><br>
+
+            <button type="submit" class="btn" name="codeMsg" id="submit">Codificar Mensagem!</button>
+
+            <br><br>
+            <textarea id="res" class="res" name="res" rows="4" cols="50"></textarea>
+            </fieldset>
+        </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
