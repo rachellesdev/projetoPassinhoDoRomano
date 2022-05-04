@@ -33,6 +33,8 @@ var select = document.querySelector("select");
 });
 
 
+
+
 // ------------------------------------ "Ligando" os radio buttons -------------------------------------------------------------------
 
 var txt = document.getElementById("txt")
@@ -99,5 +101,16 @@ function decodeCesar(txt, inc) {
     return resultado.join("");
 }
 
+// -------------------------------------- codificar base64 -----------------------------------------------------------------------------------
+
+function codeBase64(res){
+    return btoa(res)
+}
+
+// -------------------------------------- decodificar base64 -----------------------------------------------------------------------------------
+
+function decodeBase64(res){
+    return atob(res)
+}
 
 
